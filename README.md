@@ -1,1 +1,1 @@
-# Desafio Full-Stack: Front-End
+# Desafio Full-Stack • Front-End
