@@ -8,7 +8,6 @@ import { ContactContext } from "../../../Context/contactContext";
 import { useContext } from "react";
 import { StyledPageTemplate } from "../../../Styles/page-template";
 import { ModalCreateContact } from  "./Modal"
-// import { ModalEditContact } from "./ModalEdit";
 
 export const DashboardPage = () => {
   const { loggedUserData, logout } = useContext(UserContext);

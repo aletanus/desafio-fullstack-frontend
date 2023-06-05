@@ -26,7 +26,7 @@ export interface iUserData {
     created_at: string;
     updated_at: string;
     contacts:[];
-    works: string; // Define o tipo adequado para essa propriedade
+    works: string;
     avatar_url: string | null;
   }
 
@@ -35,30 +35,17 @@ export interface iUserContext {
     loading: boolean;
     setLoading: React.Dispatch<React.SetStateAction<boolean>>;
     
-    // user: iUserData | null
     userRegister: (formData: iRegisterFormValues, setLoading: React.Dispatch<React.SetStateAction<boolean>>) => void
     userLogin: (formData: iLoginFormValues, setLoading: React.Dispatch<React.SetStateAction<boolean>>) => void
     logout: (event: React.MouseEvent<HTMLButtonElement>) => void
-    // searchItem: (event:React.FormEvent<HTMLFormElement>) => void 
 
     userToken: string | null
-    // setUserToken: React.Dispatch<React.SetStateAction<string | null>>
 
     loggedUserData: iUser | null;
-    // setloggedUserData: React.Dispatch<React.SetStateAction<iUserData | null>>;
+
     setloggedUserData: React.Dispatch<React.SetStateAction<iUser | null>>;
 
-
     navigate: NavigateFunction;
-
-    // products: iProductsDataList | null
-    // setProducts: React.Dispatch<React.SetStateAction<iProductsDataList | null>>
-    
-    // filteredProdutcs: iProductsDataList | null
-    // setFilteredProdutcs: React.Dispatch<React.SetStateAction<iProductsDataList | null>>
-
-    // itensCounter: number
-    // setItensCounter: React.Dispatch<React.SetStateAction<number>>
 }
 
 export interface iContact {
@@ -68,29 +55,6 @@ export interface iContact {
   phone_number_category: string;
 }
 
-// export interface iContactsContext {
-
-//   usersContacts: iContact[] | [];
-//   setUsersContacts: React.Dispatch<React.SetStateAction<iContact[] | []>>;
-
-//   registerUsersContact: (formData: iContactFormValues) => Promise<void>
-
-//   modal: boolean;
-//   setModal: React.Dispatch<React.SetStateAction<boolean>>
-
-//   editUsersContact: (editedContact: iContactFormValues) => Promise<void>
-
-//   modalEdit: boolean
-//   setModalEdit: React.Dispatch<React.SetStateAction<boolean>>
-
-//   contactDelete: (contactId: any) => Promise<void>
-
-//   contacts: () => Promise<iContact[] | []>
-    
-// }
-
-
-// Defina a interface para o contexto de contatos
 export interface iContactsContext {
   contacts: () => Promise<void>;
   registerUsersContact: (formData: iContactFormValues) => Promise<void>;

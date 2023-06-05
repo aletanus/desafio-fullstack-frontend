@@ -1,5 +1,4 @@
 import React from "react";
-// import logo from "../../../assets/Logo.svg";
 import logo from "../../../assets/Logo_Contact_Hub.svg";
 import { StyledButton } from "../../../Styles/buttons-style";
 import { StyledLogo } from "./style";
