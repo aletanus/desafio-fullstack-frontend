@@ -29,15 +29,4 @@ export const registerSchema = yup.object().shape({
     profile_photo: yup
     .string()
     .url("A URL fornecida não é válida")
-    // .required("É necessário falar algo sobre você.")
-    // .min(3, "A bio precisa ao menos de 3 caracteres")
-    // .max(150, "A bio pode ter no máximo 150 caracteres."),
-
-    // contact: yup
-    // .string(),
-    // // .required("É necessário deixar uma opção de contato.")
-    // // .min(3, "O contato precisa ter ao menos 3 caracteres"),
-
-    // course_module: yup.string()
-    // // .required("Escolha um módulo"),
 })

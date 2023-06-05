@@ -4,6 +4,4 @@ export interface iRegisterFormValues {
     password: string;
     passwordConfirm: string;
     profile_photo: string;
-    // contact: string;
-    // course_module: string;
 }
